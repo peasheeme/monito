@@ -1,0 +1,86 @@
+body {
+	background-color: lightblue;
+	margin: 0;
+}
+.cvanderland {
+	width: 1471px;
+	height: 364px;
+	background-image: url('images/fondo.png');
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin:0 auto;
+
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	/*background-position: center bottom;
+	background-repeat: no-repeat;*/
+}
+.cvander {
+	/*background: red;*/
+	width: 166px;
+	height: 171px;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	overflow: hidden;
+	transition: .3s;
+	/*animation: tiempo / nombre de la animacion*/
+	/*animation: 2s cvander infinite;*/
+}
+.cvander:hover {
+	/*background: blue;*/
+	
+}
+.cvander:hover .cvander-head {
+	/*border: 10px solid red;*/
+	/*transform: translateY(5px);*/
+	animation: .5s cvander infinite;
+}
+.cvander:hover .cvander-ipad{
+	transform: rotate(-7deg);
+}
+.cvander-body {
+	position: absolute;
+	bottom: 0;
+	left:0px;
+}
+.cvander-head {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: .3s;
+}
+
+.cvander-ipad {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	transition: .2s;
+}
+/* ANIMACIONES CONFIGURACION DE LAS ANIMACIONES*/ 
+@keyframes cvander {
+	/* 0%  -  100%  SE PUEDEN HACER DE 0 A 100 */
+	/* FROM   TO* SE PUEDE HACER DE FROM A TO */
+	/*from {
+		/*border:1px solid red;
+	}
+	to {
+		
+		transform: translateY(5px); 
+	}*/
+
+	/*0% {
+
+	}*/
+	50% {
+		transform: translateY(5px) rotate(2deg) ; 
+	}
+	100% {
+		transform: translateY(0px); 
+	}
+}
